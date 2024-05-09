@@ -1,3 +1,11 @@
+
+import Hero from "./components/Hero";
+
 export default function Home() {
-	return <h1>WayFinder</h1>;
+	return (
+		<div>
+			{/* <h1>WayFinder</h1> */}
+			<Hero />
+		</div>
+	)
 }
