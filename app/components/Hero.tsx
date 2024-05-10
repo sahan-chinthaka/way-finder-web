@@ -31,7 +31,7 @@ export default function navbar() {
                 </div>
               </div>
 
-              <div className="distance">
+              <div className="distance sub-distance">
                 <div className="date calender-img">
                   <label htmlFor="">Date</label><br />
                   <input type="text" placeholder="Select the Date" />
@@ -51,7 +51,11 @@ export default function navbar() {
                 </div>
               </div>
 
+              <button type="submit" className='btn'>Search Buses</button>
+
             </form>
+
+            
 
           </div>
         </div>

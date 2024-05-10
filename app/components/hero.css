@@ -22,16 +22,19 @@
 
 .content {
     margin-inline: 12rem;
-    background-color: rgba(245, 245, 220, 0.623);
-    padding: 2rem;
 }
 
 .content h2 {
     font-size: 28px;
+    margin-bottom: 1rem;
 }
 
 .form {
     width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background-color: #FAF9F9;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem 2rem 2rem;
 }
 .form input {
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -48,6 +51,9 @@ input {
 .distance {
     display: flex;
     justify-content: space-between;
+}
+
+.sub-distance {
     margin-top: 2rem;
 }
 
@@ -62,4 +68,16 @@ input {
     display: inline-block;
     right: -10px;
     top: 0;
+}
+
+.btn {
+    margin-top: 3rem;
+    padding: 10px 30px;
+    background-color: #2b54e9ea;
+    color: white;
+    border-radius: 30px;
+}
+
+.btn:is(:hover, :focus-visible) {
+    background-color: #2B55E9;
 }
