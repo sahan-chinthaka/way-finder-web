@@ -1,4 +1,7 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendarDays } from '@fortawesome/free-solid-svg-icons';
+
 import "./hero.css";
 import calendar from "../assest/calendar.png";
 
@@ -36,7 +39,9 @@ export default function navbar() {
                   <label htmlFor="">Date</label><br />
                   <input type="text" placeholder="Select the Date" />
                   <a href="#">
-                    <img src="calender" alt="calender" />
+                    <div className="calender">
+                      <FontAwesomeIcon icon={faCalendarDays} />
+                    </div>
                   </a>
                 </div>
 
