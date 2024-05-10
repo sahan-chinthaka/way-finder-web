@@ -1,6 +1,9 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleUp, faBus } from '@fortawesome/free-solid-svg-icons';
+
 import "./searchresults.css";
-import arrow from "../assest/arrow.svg";
+
 
 export default function Searchresults() {
   return (
@@ -12,10 +15,8 @@ export default function Searchresults() {
         <div className="container">
 
           <div className="back-btn">
-            <a href="#">
-              <img src={arrow} alt="Arrow" />
-            </a>
-            <p className="back">Back</p>
+            <FontAwesomeIcon icon={faAngleUp} className='btn-icon' />
+            <a href="#"><p className="back">Back</p></a>
           </div>
 
           <div className="sort-result">
@@ -38,111 +39,130 @@ export default function Searchresults() {
         {/* search results */}
         <div className="container container-r">
 
-          <div className="results">
-            <div className='result-content'>
-              <a href="#">
-                <img src={arrow} alt="Arrow" />
-              </a>
+          <a href="#">
+            <div className="results">
+              <div className='result-content'>
 
-              <p className="r-text">
-                Anuradhapura
-                <span> --- </span> 
-                Pabahinna 
-                <span> | </span> 
-                <span className='Distance'> 250 km </span> 
-                <span> | </span> 
-                <span className='time'> 09:00 A.M </span> 
-              </p>
-            </div>
+                <div className="result-icon">
+                  <FontAwesomeIcon icon={faBus} className='result-icon' />
+                </div>
 
-            <div className="b-status">
-              <p className="status">Direct Bus</p>
-            </div>
-          </div>
+                <p className="r-text">
+                  Anuradhapura
+                  <span> --- </span> 
+                  Pabahinna 
+                  <span> | </span> 
+                  <span className='Distance'> 250 km </span> 
+                  <span> | </span> 
+                  <span className='time'> 09:00 A.M </span> 
+                </p>
+              </div>
 
-        </div>
+              <div className="b-status">
+                <p className="status">Direct Bus</p>
+              </div>
 
-        {/* search results */}
-        <div className="container container-r">
-
-          <div className="results">
-            <div className='result-content'>
-              <a href="#">
-                <img src={arrow} alt="Arrow" />
-              </a>
-
-              <p className="r-text">
-                Anuradhapura
-                <span> --- </span> 
-                Pabahinna 
-                <span> | </span> 
-                <span className='Distance'> 250 km </span> 
-                <span> | </span> 
-                <span className='time'> 09:00 A.M </span> 
-              </p>
-            </div>
-
-            <div className="b-status">
-              <p className="status">Direct Bus</p>
-            </div>
-          </div>
+              
+            </div> 
+          </a>
 
         </div>
 
         {/* search results */}
         <div className="container container-r">
 
-          <div className="results">
-            <div className='result-content'>
-              <a href="#">
-                <img src={arrow} alt="Arrow" />
-              </a>
+          <a href="#">
+            <div className="results">
+              <div className='result-content'>
 
-              <p className="r-text">
-                Anuradhapura
-                <span> --- </span> 
-                Pabahinna 
-                <span> | </span> 
-                <span className='Distance'> 250 km </span> 
-                <span> | </span> 
-                <span className='time'> 09:00 A.M </span> 
-              </p>
-            </div>
+                <div className="result-icon">
+                  <FontAwesomeIcon icon={faBus} className='result-icon' />
+                </div>
 
-            <div className="b-status">
-              <p className="status">Direct Bus</p>
-            </div>
-          </div>
+                <p className="r-text">
+                  Anuradhapura
+                  <span> --- </span> 
+                  Pabahinna 
+                  <span> | </span> 
+                  <span className='Distance'> 250 km </span> 
+                  <span> | </span> 
+                  <span className='time'> 09:00 A.M </span> 
+                </p>
+              </div>
+
+              <div className="b-status">
+                <p className="status">Direct Bus</p>
+              </div>
+
+              
+            </div> 
+          </a>
 
         </div>
 
         {/* search results */}
         <div className="container container-r">
 
-          <div className="results">
-            <div className='result-content'>
-              <a href="#">
-                <img src={arrow} alt="Arrow" />
-              </a>
+          <a href="#">
+            <div className="results">
+              <div className='result-content'>
 
-              <p className="r-text">
-                Anuradhapura
-                <span> --- </span> 
-                Pabahinna 
-                <span> | </span> 
-                <span className='Distance'> 250 km </span> 
-                <span> | </span> 
-                <span className='time'> 09:00 A.M </span> 
-              </p>
-            </div>
+                <div className="result-icon">
+                  <FontAwesomeIcon icon={faBus} className='result-icon' />
+                </div>
 
-            <div className="b-status">
-              <p className="status">Direct Bus</p>
-            </div>
-          </div>
+                <p className="r-text">
+                  Anuradhapura
+                  <span> --- </span> 
+                  Pabahinna 
+                  <span> | </span> 
+                  <span className='Distance'> 250 km </span> 
+                  <span> | </span> 
+                  <span className='time'> 09:00 A.M </span> 
+                </p>
+              </div>
+
+              <div className="b-status">
+                <p className="status">Direct Bus</p>
+              </div>
+
+              
+            </div> 
+          </a>
 
         </div>
 
+        {/* search results */}
+        <div className="container container-r">
+
+          <a href="#">
+            <div className="results">
+              <div className='result-content'>
+
+                <div className="result-icon">
+                  <FontAwesomeIcon icon={faBus} className='result-icon' />
+                </div>
+
+                <p className="r-text">
+                  Anuradhapura
+                  <span> --- </span> 
+                  Pabahinna 
+                  <span> | </span> 
+                  <span className='Distance'> 250 km </span> 
+                  <span> | </span> 
+                  <span className='time'> 09:00 A.M </span> 
+                </p>
+              </div>
+
+              <div className="b-status">
+                <p className="status">Direct Bus</p>
+              </div>
+
+              
+            </div> 
+          </a>
+
+        </div>
 
       </div>
 
