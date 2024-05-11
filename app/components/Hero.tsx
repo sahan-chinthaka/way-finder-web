@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarDays } from '@fortawesome/free-solid-svg-icons';
 
 import "./hero.css";
+import Navbar from "./Navbar";
 import calendar from "../assest/calendar.png";
 
 export default function navbar() {
@@ -10,6 +11,7 @@ export default function navbar() {
 
   return (
     <div>
+      <Navbar />
       <div className="section-hero">
         <div className="main-container">
           <h1>Real-Time bus tracking for any one !!!</h1>

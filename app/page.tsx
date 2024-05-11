@@ -1,5 +1,6 @@
 
 import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
 import Searchresults from "./components/Searchresults";
 
 export default function Home() {

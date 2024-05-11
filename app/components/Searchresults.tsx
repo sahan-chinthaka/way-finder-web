@@ -3,11 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleUp, faBus } from '@fortawesome/free-solid-svg-icons';
 
 import "./searchresults.css";
+import Navbar from "./Navbar";
 
 
 export default function Searchresults() {
   return (
     <div>
+
+      <Navbar />
       
       <div className="section">
 

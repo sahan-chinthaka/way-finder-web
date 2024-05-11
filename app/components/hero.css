@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ovo&family=Poppins:wght@400;500;600&display=swap');
+
+
 .section {
     margin-block: 3rem;
 }
@@ -5,19 +9,22 @@
 
 .main-container {
     min-width: 100%;
-    height: 35rem;
+    height: 16rem;
     background-image: url(../assest/bus1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-container h1 {
-    position: relative;
     color: white;
     font-weight: 400;
     font-size: 56px;
-    text-align: center;
-    padding-top: 15rem;
+    font-family: "Ovo", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .content {
@@ -67,6 +74,7 @@ input {
     width: 30px;
     margin-left: 19.5rem;
     margin-top: -2.7rem;
+    opacity: 0.7;
 }
 
 .btn {
