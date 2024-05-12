@@ -1,0 +1,78 @@
+.service-page {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-inline: 120px;
+  }
+  
+  .service-header {
+    text-align: center;
+  }
+  
+  .service-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+    padding-inline: 20px;
+  }
+  
+  .service-description {
+    font-size: 16px;
+    margin-bottom: 20px; 
+    padding-inline: 20px;
+  }
+  
+  .back-button {
+    font-size: 18px;
+    
+  }
+  
+  .service-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+  
+  .service-button-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .service-card {
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+    display: grid;
+    justify-content: center;
+    border-radius: 25px;
+    padding: 0 20px 20px;
+    text-align: center;
+    width: 30%;
+    height: 500px;
+    
+  }
+
+  .service-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container {
+    width: 370px;
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+    padding-bottom: 20px;
+    
+}
+.image-container-back {
+    width: 16px;
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+    
+}
