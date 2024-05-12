@@ -1,0 +1,25 @@
+
+.back-btn {
+    display: flex;
+    margin-bottom: 2rem;
+    max-width: 120px;
+    align-items: center;
+}
+.btn-icon {
+    font-size: 15px !important;
+    rotate: 270deg;
+    color: white;
+    padding: 10px 12px;
+    background-color: #2B55E9;
+    border-radius: 40px;
+}
+
+.back-btn p {
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 1rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+.back-btn p:is(:hover, :focus-visible) {
+    color: black;
+}

@@ -1,0 +1,44 @@
+
+.bus-status {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.details h2 {
+    font-size: 18px;
+}
+
+.main {
+    display: flex;
+    gap: 1rem;
+}
+.bus-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 6px;
+    background-color: blueviolet;
+}
+
+.da-time {
+    display: grid;
+    gap: 8px;
+}
+.da-time span {
+    padding: 1px 7px;
+    border-radius: 8px;
+    color: white;
+    height: fit-content;
+}
+
+.arrival {
+    background-color: rgba(255, 0, 0, 0.804);
+}
+.depature {
+    background-color: green;
+}
