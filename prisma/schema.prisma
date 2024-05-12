@@ -8,16 +8,17 @@ datasource db {
 }
 
 model User {
-   id            String    @id @default(uuid())
+   id            String     @id @default(uuid())
    name          String?
-   uname         String?   @unique
-   email         String?   @unique
-   emailVerified DateTime? @map("email_verified")
+   uname         String?    @unique
+   email         String?    @unique
+   emailVerified DateTime?  @map("email_verified")
    image         String?
-   createdAt     DateTime  @default(now())
-   updatedAt     DateTime  @updatedAt
+   createdAt     DateTime   @default(now())
+   updatedAt     DateTime   @updatedAt
    password      String?
    accounts      Account[]
+   BusOwner      BusOwner[]
 
    @@map("users")
 }
@@ -43,19 +44,22 @@ model Account {
 }
 
 model City {
-   id        Int         @id @default(autoincrement())
-   name      String
-   latitude  Decimal
-   longitude Decimal
-   RouteStop RouteStop[]
-   MapFrom   Map[]       @relation("MapFrom")
-   MapTo     Map[]       @relation("MapTo")
+   id         Int         @id @default(autoincrement())
+   name       String
+   latitude   Decimal
+   longitude  Decimal
+   RouteStop  RouteStop[]
+   MapFrom    Map[]       @relation("MapFrom")
+   MapTo      Map[]       @relation("MapTo")
+   BusTimeArr BusTime[]   @relation("arrival_city_id")
+   BusTimeDep BusTime[]   @relation("departure_city_id")
 }
 
 model Route {
    id           Int         @id @default(autoincrement())
    route_number String
    RouteStop    RouteStop[]
+   Time         BusTime[]
 }
 
 model RouteStop {
@@ -74,4 +78,40 @@ model Map {
    distance     Float
    from_city_id Int
    to_city_id   Int
+}
+
+model BusTime {
+   id                Int      @id @default(autoincrement())
+   route             Route    @relation(fields: [routeId], references: [id])
+   departure_city    City     @relation(name: "departure_city_id", fields: [departure_city_id], references: [id])
+   departure_time    DateTime
+   arrival_city      City     @relation(name: "arrival_city_id", fields: [arrival_city_id], references: [id])
+   arrival_time      DateTime
+   routeId           Int
+   departure_city_id Int
+   arrival_city_id   Int
+}
+
+model Bus {
+   id         Int       @id @default(autoincrement())
+   name       String?
+   number     String?
+   owner      BusOwner? @relation(fields: [busOwnerId], references: [id])
+   type       BusType
+   images     String[]
+   busOwnerId Int?
+}
+
+enum BusType {
+   NORMAL
+   SEMI_LUXURY
+   LUXURY
+}
+
+model BusOwner {
+   id      Int    @id @default(autoincrement())
+   user    User   @relation(fields: [userId], references: [id])
+   contact String
+   userId  String
+   Bus     Bus[]
 }
