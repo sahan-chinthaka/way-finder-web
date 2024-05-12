@@ -13,6 +13,8 @@ model City {
    latitude  Decimal
    longitude Decimal
    RouteStop RouteStop[]
+   MapFrom   Map[]       @relation("MapFrom")
+   MapTo     Map[]       @relation("MapTo")
 }
 
 model Route {
@@ -28,4 +30,13 @@ model RouteStop {
    route_id    Int
    city        City  @relation(fields: [city_id], references: [id])
    route       Route @relation(fields: [route_id], references: [id])
+}
+
+model Map {
+   id           Int   @id @default(autoincrement())
+   from         City  @relation(name: "MapFrom", fields: [from_city_id], references: [id])
+   to           City  @relation(name: "MapTo", fields: [to_city_id], references: [id])
+   distance     Float
+   from_city_id Int
+   to_city_id   Int
 }
