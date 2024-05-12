@@ -8,6 +8,7 @@ import {faMessage } from '@fortawesome/free-solid-svg-icons';
 import {faClock } from '@fortawesome/free-solid-svg-icons';
 import {faLaptop } from '@fortawesome/free-solid-svg-icons';
 import {faPeopleGroup } from '@fortawesome/free-solid-svg-icons';
+import {faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -27,13 +28,18 @@ export default function navbar(){
                 <div className="service-buttons">
                     
                     <div className="service-card">
+                       
                         <div className="image-container">
                             <FontAwesomeIcon icon={faRecycle} />
                         </div>
                         <h1 className="service-title">Live Updates</h1>
                         <p className="service-descriptiuon">Receive real-time notifications about bus arrivals, delays, and route changes, keeping you informed throughout your journey.</p><div className="service-button-container">
                         <p className="back-button">Read More</p>
+                        
                     </div>
+                    <a href="/" className='image-container-back'>
+                        <FontAwesomeIcon icon={faArrowRight} />
+                        </a>
                     </div>
 
                     <div className="service-card">
@@ -44,6 +50,9 @@ export default function navbar(){
                         <p className="service-descriptiuon">Enjoy exclusive discounts and promotional offers on ticket purchases, loyalty rewards, and special deals for frequent travelers.</p><div className="service-button-container">
                         <p className="back-button">Read More</p>
                     </div>
+                    <a href="/" className='image-container-back'>
+                        <FontAwesomeIcon icon={faArrowRight} />
+                        </a>
                     </div>
 
                     <div className="service-card">
@@ -54,6 +63,9 @@ export default function navbar(){
                         <p className="service-descriptiuon">Access user-generated reviews and ratings for bus routes, stops, and experiences, helping you make informed decisions about your travels.</p><div className="service-button-container">
                         <p className="back-button">Read More</p>
                     </div>
+                    <a href="/" className='image-container-back'>
+                        <FontAwesomeIcon icon={faArrowRight} />
+                        </a>
                     </div>
 
                     <div className="service-card">
@@ -64,6 +76,9 @@ export default function navbar(){
                         <p className="service-descriptiuon">We adhere to strict schedules, utilize efficient routing algorithms, and provide real-time updates to ensure you reach your destination on time.</p><div className="service-button-container">
                         <p className="back-button">Read More</p>
                     </div>
+                    <a href="/" className='image-container-back'>
+                        <FontAwesomeIcon icon={faArrowRight} />
+                        </a>
                     </div>
                     
                     <div className="service-card">
@@ -74,6 +89,9 @@ export default function navbar(){
                         <p className="service-descriptiuon">Receive real-time notifications about bus arrivals, delays, and route changes, keeping you informed throughout your journey.</p><div className="service-button-container">
                         <p className="back-button">Read More</p>
                     </div>
+                    <a href="/" className='image-container-back'>
+                        <FontAwesomeIcon icon={faArrowRight} />
+                        </a>
                     </div>
                         
                     <div className="service-card">
@@ -84,6 +102,9 @@ export default function navbar(){
                         <p className="service-descriptiuon">Join discussions, share travel tips, and connect with fellow commuters in our community forums, fostering a sense of camaraderie among users.</p><div className="service-button-container">
                         <p className="back-button">Read More</p>
                     </div>
+                    <a href="/" className='image-container-back'>
+                        <FontAwesomeIcon icon={faArrowRight} />
+                        </a>
                     </div>
 
                        
