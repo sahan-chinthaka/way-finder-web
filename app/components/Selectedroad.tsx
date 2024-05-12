@@ -31,15 +31,8 @@ export default function Selectedroad() {
                     <div className="buses">
                         <h1>Available buses with arrival time and departure time</h1>
 
-                        <Busstatus />
-                        <Busstatus />
-                        <Busstatus />
-                        <Busstatus />
-                        <Busstatus />
-                        <Busstatus />
-                        <Busstatus />
-                        <Busstatus />
-                        <Busstatus />
+                        <Busstatus name='Anuradhapura Express' number='NP-3456' start='08:30 A.M' end='03.30 P.M'/>
+                        <Busstatus name='Balangoda Express' number='NP-4321' start='05:00 A.M' end='11.30 A.M'/>
                     </div>
 
                     <div className="map">

@@ -4,7 +4,7 @@ import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 
 import "./busstatus.css";
 
-export default function Busstatus() {
+export default function Busstatus({name, number, start, end} : {name: string, number: string, start: string, end:string}) {
   return (
     <div>
         <div className="bus-status">
@@ -15,16 +15,16 @@ export default function Busstatus() {
 
                 <div className="details">
                     <h2 className="d-heading">
-                        Sahan Express 
+                        {name} 
                         {/* <span><FontAwesomeIcon icon={faCircleCheck} style={{color: "#000000",}} /></span> */}
                     </h2>
-                    <p className="number">NP-3456</p>
+                    <p className="number">{number}</p>
                 </div>
             </div>
 
             <div className="da-time">
-                <span className='arrival'>09:00 A.M</span>
-                <span className='depature'>09:00 A.M</span>
+                <span className='arrival'>{start}</span>
+                <span className='depature'>{end}</span>
             </div>
 
         </div>

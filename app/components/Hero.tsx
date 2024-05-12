@@ -5,6 +5,7 @@ import { faCalendarDays } from '@fortawesome/free-solid-svg-icons';
 import "./hero.css";
 import Navbar from "./Navbar";
 import calendar from "../assest/calendar.png";
+import Link from 'next/link';
 
 export default function navbar() {
     
@@ -58,7 +59,9 @@ export default function navbar() {
                 </div>
               </div>
 
-              <button type="submit" className='btn'>Search Buses</button>
+					<Link href={"/search"}>
+              		<button type="submit" className='btn'>Search Buses</button>
+					</Link>
 
             </form>
 

@@ -3,13 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleUp, faBus } from '@fortawesome/free-solid-svg-icons';
 
 import "./searchcard.css";
+import Link from 'next/link';
 
 export default function Searchdetails() {
   return (
     <div>
         <div className="container container-r">
 
-            <a href="#">
+		  <Link href="/search/1">
             <div className="results">
                 <div className='result-content'>
 
@@ -20,11 +21,11 @@ export default function Searchdetails() {
                 <p className="r-text">
                     Anuradhapura
                     <span> --- </span> 
-                    Pabahinna 
+                    Balangoda 
                     <span> | </span> 
                     <span className='Distance'> 250 km </span> 
                     <span> | </span> 
-                    <span className='time'> 09:00 A.M </span> 
+                    <span className='time'> 08:30 A.M </span> 
                 </p>
                 </div>
 
@@ -34,7 +35,7 @@ export default function Searchdetails() {
 
                 
             </div> 
-            </a>
+            </Link>
 
         </div>
     </div>

@@ -5,6 +5,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 import "./navbar.css";
 import logo from "../assest/logo.png";
+import Link from 'next/link';
 
 export default function Navbar() {
   return (
@@ -12,13 +13,13 @@ export default function Navbar() {
         <header className="navbar">
             <div className="logo">
                 <a href="#">
-                    <img src={logo} alt="Blog Logo" />
+                    <img src={logo.src} alt="Blog Logo" />
                 </a>
             </div>
 
             <nav className='nav'>
                 <ul className='navlinks'>
-                    <li><a href="#" className='links'>Home</a></li>
+                    <li><Link href="/" className='links'>Home</Link></li>
                     <li><a href="#" className='links'>Services</a></li>
                     <li><a href="#" className='links'>About Us</a></li>
                     <li><a href="#" className='links'>Blogs</a></li>

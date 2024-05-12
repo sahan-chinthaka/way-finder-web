@@ -9,12 +9,12 @@ import {
   InfoWindow,
 } from "@vis.gl/react-google-maps";
 
-export default function map() {
+export default function Mmap() {
   const position = { lat: 53.54, lng: 10 };
   const [open, setOpen] = useState(false);
 
   return (
-    <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}>
+    <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY as string}>
       <div style={{ height: "100vh", width: "100%" }}>
         <Map zoom={9} center={position} mapId={process.env.NEXT_PUBLIC_MAP_ID}>
           <AdvancedMarker position={position} onClick={() => setOpen(true)}>
@@ -27,7 +27,7 @@ export default function map() {
 
           {open && (
             <InfoWindow position={position} onCloseClick={() => setOpen(false)}>
-              <p>I'm in Hamburg</p>
+              <p>Im in Hamburg</p>
             </InfoWindow>
           )}
         </Map>
