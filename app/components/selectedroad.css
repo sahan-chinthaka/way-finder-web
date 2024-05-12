@@ -1,0 +1,36 @@
+
+.section {
+    margin-block: 3rem;
+    max-width: max-content;
+}
+
+.container {
+    margin-inline: 12rem;
+}
+
+.content {
+    display: flex;
+    gap: 1rem;
+    margin-top: -2rem;
+    max-height: 90vh;
+}
+
+.buses {
+    width: 450px;
+    padding: 1rem;
+    border-radius: 1rem;
+    max-height: 90vh;
+    background-color: #2B55E9;
+    overflow-y: scroll;
+}
+.buses h1 {
+    color: white;
+    font-size: 17px;
+    margin-bottom: 1rem;
+}
+
+.map {
+    width: 625px;
+    border-radius: 1rem;
+    background-color: antiquewhite;
+}

@@ -1,0 +1,44 @@
+
+.results {
+    width: 100%;
+    display: flex;
+    padding: 20px 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+}
+
+.results:is(:hover, :focus-visible) {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.result-icon {
+    width: 30px;
+}
+.result-content {
+    display: flex;
+    max-width: max-content;
+}
+.r-text {
+    margin-left: 1.5rem;
+    font-weight: 600;
+}
+.r-text span {
+    margin: 0 1rem;
+}
+
+.r-text .Distance {
+    background-color: #2B55E9;
+    padding: 5px 8px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 400;
+}
+
+.r-text .time {
+    background-color: #38AD60;
+    padding: 5px 8px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 400;
+}

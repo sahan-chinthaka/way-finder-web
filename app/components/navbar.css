@@ -1,0 +1,67 @@
+/* Header Component Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+header {
+  background-color: #2B55E9; /* Background color of the header */
+  padding: 2px 120px; /* Spacing inside the header */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffffd6; /* Text color */
+  z-index: 100;
+}
+
+.logo img {
+  width: 300px; /* Adjust the width of your logo image */
+  height: 80px;
+}
+
+nav ul {
+  list-style-type: none; /* Remove bullet points from the list */
+  padding: 0;
+  display: flex;
+}
+
+.nav li {
+  margin-right: 30px;
+  font-size: 20px;
+
+  /* Spacing between navigation links */
+}
+.links {
+    color: #ffffffd6;
+    font-size: 18px;
+    font-weight: 100;
+}
+.links:is(:hover, :focus-visible) {
+    color: white;
+    cursor: pointer;
+  
+    /* Spacing between navigation links */
+  }
+
+
+.contact {
+    display: flex;
+    align-items: center;
+    width: 230px;
+    justify-content: space-between;
+}
+
+.user-profile {
+    width: 40px;
+    padding: 6px 7px;
+    border-radius: 40px;
+    border: 2px solid white;
+}
+
+.btn-booknow {
+    padding: 5px 15px;
+    border-radius: 40px;
+    border: 2px solid #ffffffd6;
+}
+.btn-booknow:is(:hover, :focus-visible) {
+    border: 2px solid #ffffff;
+    color: white;
+}
